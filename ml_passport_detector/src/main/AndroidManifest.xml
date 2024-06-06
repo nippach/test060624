@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!-- This is required to run OpenCL delegate,
+        extracted from org.tensorflow:tensorflow-lite-gpu-api -->
+        <uses-library
+            android:name="libOpenCL.so"
+            android:required="false" />
+        <uses-library
+            android:name="libOpenCL-car.so"
+            android:required="false" />
+        <uses-library
+            android:name="libOpenCL-pixel.so"
+            android:required="false" />
+    </application>
+</manifest>
